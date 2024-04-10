@@ -1,2 +1,10 @@
 # RomanNumerals
 This program translates roman numerals into decimal numbers and decimal numbers into roman numerals
+
+I spent exactly 3 hours coding this project.
+
+I started by working on converting the roman numerals into decimal numbers. I wrote an if statement inside of a loop to check for each possible letter. Now reflecting on this part of the project I think it would've be more readable if this part had been written as a loop. After this it checks to see if a number should be subtract (ie IV = 4 instead of IV = 6). It checks if the last value is less than the value of the current character in the roman numeral. If so it accounts for subtraction having been done by setting the value for the current character to the value minus the value of the last character's value. It then subtracts the number of the last value again as this number was incorrectly added in the previous iteration. Finally it displays the decimal number that was calculated.
+
+I then started working on converting a decimal number into a roman numeral. I decided to write it as a loop instead of many if statements since I felt that that would be much more readable. It took me a while to figure out the logic of using a loop instead of if statements to do this part of the program and I spent a good portion of my time working through this, hence why I didn't go back and change the previous if statements in part 1 (converting roman numerals to decimal numbers) to a loop. Despite the time it took me to think through this part of the problem I feel that it makes the code much more readable and I would likely be able to think through this situation quicker in the future. After going through the loops and calculating the roman numeral the result is displayed.
+
+I then added a few error statements to test for basic user input errors such as inputing "two" instead of "2", using letters that aren't one of the roman numeral letters, etc. I also tested for any errors in my codes calculation using the website provided and spent the rest of my time correcting these logical mistakes and typos.
